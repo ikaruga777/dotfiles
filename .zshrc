@@ -11,8 +11,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 #プロンプト
-PROMPT='%F{red}(╹◡╹)っ%f'
-RPROMPT='%F{white}%35<..<%~/%f'
+#PROMPT='%F{red}(╹◡╹)っ%f'
+#RPROMPT='%F{white}%35<..<%~/%f'
 
 # 色の設定
 #export LSCOLORS=Exfxcxdxbxegedabagacad
@@ -28,13 +28,12 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 function cd() {
   builtin cd $@ && ls;
 }
-
+echo 'aaa'
 SPROMPT="%F{red}( ･ั﹏･ั)???%f %F{magenta}もしかして%f %F{red}%B%r%b%f %F{magenta}？ [うん(y),ちゃう(n)]%f:${reset_color} "
-
+echo 'bbb'
 alias g='git'
 alias gc='git commit -m'
 #ZSH_THEME ="powerline"
-export PATH=$PATH:~/settings/powerline/scripts
-
+echo 'bccc'
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
-
+echo 'ddd'
