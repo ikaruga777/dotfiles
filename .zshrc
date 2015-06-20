@@ -28,12 +28,11 @@ zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 function cd() {
   builtin cd $@ && ls;
 }
-echo 'aaa'
+
 SPROMPT="%F{red}( ･ั﹏･ั)???%f %F{magenta}もしかして%f %F{red}%B%r%b%f %F{magenta}？ [うん(y),ちゃう(n)]%f:${reset_color} "
-echo 'bbb'
+
 alias g='git'
 alias gc='git commit -m'
 #ZSH_THEME ="powerline"
-echo 'bccc'
+export PATH=$PATH:~/settings/powerline/scripts
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
-echo 'ddd'

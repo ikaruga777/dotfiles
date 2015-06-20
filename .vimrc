@@ -71,8 +71,6 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 
 
-
-
 call neobundle#end()
 
 " Required:
