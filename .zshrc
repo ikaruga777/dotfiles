@@ -36,3 +36,4 @@ alias gc='git commit -m'
 #ZSH_THEME ="powerline"
 export PATH=$PATH:~/settings/powerline/scripts
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
+export PATH=$HOME/.nodebrew/current/bin:$PATH
