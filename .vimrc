@@ -47,6 +47,8 @@ set smarttab
 set whichwrap=b,s,h,l,<,>,[,]
 " 構文毎に文字色を変化させる
 syntax on
+" バックスペースが効かなくなるやつの対策
+set backspace=indent,eol,start
 
 colorscheme desert
 
