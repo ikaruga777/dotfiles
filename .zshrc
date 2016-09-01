@@ -1,6 +1,5 @@
 #強力な補完
 autoload -Uz compinit
-compinit
 
 setopt correct #コマンドのスペルを訂正する
 
@@ -37,3 +36,6 @@ alias gc='git commit -m'
 export PATH=$PATH:~/settings/powerline/scripts
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH="$PATH:$HOME/.rbenv/bin"
+eval "$(rbenv init - zsh)"
