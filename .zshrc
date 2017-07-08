@@ -28,11 +28,24 @@ function cd() {
   builtin cd $@ && ls;
 }
 
+function gconfig-akatsuura() {
+  git config --local user.email "a.katsuura1991@gmail.com"
+  git config --local user.name "akatsuura"
+  git config --local -l
+}
+function gconfig-ikaruga() {
+  git config --local user.email "ikaruga777@gmail.com"
+  git config --local user.name "ikaruga"
+  git config --local -l
+}
+
 SPROMPT="%F{red}( ･ั﹏･ั)???%f %F{magenta}もしかして%f %F{red}%B%r%b%f %F{magenta}？ [うん(y),ちゃう(n)]%f:${reset_color} "
 
 alias g='git'
 alias gc='git commit -m'
 #ZSH_THEME ="powerline"
+
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
 export PATH=$PATH:~/settings/powerline/scripts
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
 export PATH=$HOME/.nodebrew/current/bin:$PATH
