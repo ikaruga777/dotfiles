@@ -42,9 +42,15 @@ function gconfig-ikaruga() {
 SPROMPT="%F{red}( ･ั﹏･ั)???%f %F{magenta}もしかして%f %F{red}%B%r%b%f %F{magenta}？ [うん(y),ちゃう(n)]%f:${reset_color} "
 
 alias g='git'
-alias gc='git commit -m'
+alias gc='git commit'
+alias gco='git checkout'
+alias ga='git add .'
+alias gb='git branch'
+alias r='rails'
+alias rcs='rails console --sandbox'
 #ZSH_THEME ="powerline"
-
+#gitのブランチ補完
+fpath=(/usr/local/share/zsh-completions $fpath)
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
 export PATH=$PATH:~/settings/powerline/scripts
 . ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
