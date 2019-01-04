@@ -2,3 +2,6 @@
 set vertical-split = false
 # 水平分割したウィンドウの下画面サイズを % で指定（行数指定も可）
 set split-view-height = 80%
+
+bind main  r !git rebase -i %(commit)
+bind diff  r !git rebase -i %(commit)
