@@ -1,4 +1,4 @@
-benv init - | source
+rbenv init - | source
 
 function gconfig-ikaruga
   git config --local user.email "ikaruga777@gmail.com"
@@ -17,3 +17,4 @@ alias l='exa'
 alias dc='docker compose'
 alias dces='docker compose exec spring'
 alias d='docker'
+
