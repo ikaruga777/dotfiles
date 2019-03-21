@@ -1,4 +1,6 @@
 rbenv init - | source
+set -x PATH $HOME/.pyenv/bin $PATH
+. (pyenv init - | psub)
 
 function gconfig-ikaruga
   git config --local user.email "ikaruga777@gmail.com"
