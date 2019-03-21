@@ -52,6 +52,21 @@ set backspace=indent,eol,start
 
 colorscheme desert
 
-" 行番号の色
-highlight LineNr ctermfg=darkyellow
+""""""""""""""""""""""""""""""
+" プラグインのセットアップ
+""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
+
+" ファイルオープンを便利に
+Plug 'Shougo/unite.vim'
+" Unite.vimで最近使ったファイルを表示できるようにする
+Plug 'Shougo/neomru.vim'
+" ファイルをtree表示してくれる
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-endwise'
+" ログファイルを色づけしてくれる
+Plug 'vim-scripts/AnsiEsc.vim'
+
+call plug#end()
+""""""""""""""""""""""""""""""
 
