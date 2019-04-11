@@ -1,4 +1,4 @@
-benv init - | source
+rbenv init - | source
 
 function gconfig-ikaruga
   git config --local user.email "ikaruga777@gmail.com"
