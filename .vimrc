@@ -52,36 +52,21 @@ set backspace=indent,eol,start
 
 colorscheme desert
 
-" 行番号の色
-highlight LineNr ctermfg=darkyellow
-"---------------------------
-" Start Neobundle Settings.
-"---------------------------
-" bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+""""""""""""""""""""""""""""""
+" プラグインのセットアップ
+""""""""""""""""""""""""""""""
+call plug#begin('~/.vim/plugged')
 
-" Required:
-call neobundle#begin(expand('~/.vim/bundle/'))
+" ファイルオープンを便利に
+Plug 'Shougo/unite.vim'
+" Unite.vimで最近使ったファイルを表示できるようにする
+Plug 'Shougo/neomru.vim'
+" ファイルをtree表示してくれる
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-endwise'
+" ログファイルを色づけしてくれる
+Plug 'vim-scripts/AnsiEsc.vim'
 
-" neobundle自体をneobundleで管理
-NeoBundleFetch 'Shougo/neobundle.vim'
+call plug#end()
+""""""""""""""""""""""""""""""
 
-" 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
- " ファイルをtree表示してくれる
- NeoBundle 'scrooloose/nerdtree'
-
-
-
-
-call neobundle#end()
-
-" Required:
-filetype plugin indent on
-
-" 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-" 毎回聞かれると邪魔な場合もあるので、この設定は任意です。
-NeoBundleCheck
-
-"-------------------------
-" End Neobundle Settings.
-"-------------------------
