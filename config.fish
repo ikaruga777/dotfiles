@@ -1,3 +1,4 @@
+export LANG=ja_JP.UTF-8
 rbenv init - | source
 set -x PATH $HOME/.pyenv/bin $PATH
 . (pyenv init - | psub)
