@@ -28,4 +28,3 @@ alias dc='docker-compose'
 alias dces='docker-compose exec spring'
 alias d='docker'
 alias be='bundle exec'
-
