@@ -70,3 +70,12 @@ Plug 'vim-scripts/AnsiEsc.vim'
 call plug#end()
 """"""""""""""""""""""""""""""
 
+"ファイルツリー
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+" jjでエスケープ
+inoremap <silent> jj <ESC>
+
+" 日本語入力で”っj”と入力してもEnterキーで確定させればインサートモードを抜ける
+inoremap <silent> っj <ESC>
+
