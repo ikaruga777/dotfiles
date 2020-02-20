@@ -53,7 +53,6 @@ alias rcs='rails console --sandbox'
 fpath=(/usr/local/share/zsh-completions $fpath)
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
 export PATH=$PATH:~/settings/powerline/scripts
-. ~/settings/powerline/powerline/bindings/zsh/powerline.zsh
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.rbenv/bin"
