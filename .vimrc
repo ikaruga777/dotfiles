@@ -67,6 +67,7 @@ Plug 'tpope/vim-endwise'
 " ログファイルを色づけしてくれる
 Plug 'vim-scripts/AnsiEsc.vim'
 
+Plug 'cohama/lexima.vim'
 call plug#end()
 """"""""""""""""""""""""""""""
 

@@ -2,7 +2,6 @@ export LANG=ja_JP.UTF-8
 rbenv init - | source
 set -x PATH $HOME/.pyenv/bin $PATH
 set -x PATH $HOME/flutter/bin $PATH
-. (pyenv init - | psub)
 
 function gconfig-ikaruga
   git config --local user.email "ikaruga777@gmail.com"
