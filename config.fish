@@ -27,3 +27,7 @@ alias dc='docker-compose'
 alias dces='docker-compose exec spring'
 alias d='docker'
 alias be='bundle exec'
+
+alias amech='docker run -e TERM_PROGRAM --rm otiai10/amesh'
+alias lzd='lazydocker'
+
