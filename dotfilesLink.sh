@@ -8,5 +8,5 @@ ln -fs ~/dotfiles/fish/conf.d/000-env.fish ~/.config/fish/conf.d/000-env.fish
 ln -sf ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -sf ~/dotfiles/.pryrc ~/.pryrc
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
-ln -sf ~/dotfiles/.tmux_conf ~/.tmux_conf
+ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
 
