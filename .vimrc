@@ -50,7 +50,6 @@ syntax on
 " バックスペースが効かなくなるやつの対策
 set backspace=indent,eol,start
 
-colorscheme desert
 
 filetype plugin indent on
 
@@ -72,12 +71,17 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'cohama/lexima.vim'
 Plug 'dag/vim-fish'
 
+Plug 'cocopon/iceberg.vim'
+Plug 'gkeep/iceberg-dark'
 call plug#end()
 """"""""""""""""""""""""""""""
 
 "ファイルツリー
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
+
+" Iceberg
+let g:lightline = { 'colorscheme': 'icebergDark' }
 
 " jjでエスケープ
 inoremap <silent> jj <ESC>
