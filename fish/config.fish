@@ -1,8 +1,11 @@
 function fish_prompt
     $GOPATH/bin/powerline-go -error $status -shell bare \
-         -cwd-max-depth 3 -cwd-max-dir-size -1 \
-        -modules time,nix-shell,venv,ssh,user,cwd,perms,docker,git,jobs,exit,vgo \
-        -newline
+        -cwd-max-depth 3 -cwd-max-dir-size -1 \
+        -git-assume-unchanged-size 3000 \
+        -hostname-only-if-ssh \
+        -modules time,host,nix-shell,venv,ssh,user,cwd,perms,docker,git,jobs,exit,vgo \
+        -newline \
+        -numeric-exit-codes
 end
 
 function gconfig-ikaruga
