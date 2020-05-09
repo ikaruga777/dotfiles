@@ -52,6 +52,8 @@ set backspace=indent,eol,start
 
 colorscheme desert
 
+filetype plugin indent on
+
 """"""""""""""""""""""""""""""
 " プラグインのセットアップ
 """"""""""""""""""""""""""""""
@@ -68,6 +70,8 @@ Plug 'tpope/vim-endwise'
 Plug 'vim-scripts/AnsiEsc.vim'
 
 Plug 'cohama/lexima.vim'
+Plug 'dag/vim-fish'
+
 call plug#end()
 """"""""""""""""""""""""""""""
 
