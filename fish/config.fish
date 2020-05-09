@@ -11,8 +11,22 @@ function gconfig-ikaruga
   git config --local -l
 end
 
-function config_fish
+function edit-config-fish
   vim ~/.config/fish/config.fish
+  reload-config
+  echo 'reloaded.'
+end
+
+function reload-config
+   source ~/.config/fish/config.fish
+end
+
+function f
+  git ls-tree -r --name-only HEAD
+end
+
+function vf
+  f | fzf | xargs -o vim
 end
 
 alias g='git'
@@ -27,6 +41,10 @@ alias dc='docker-compose'
 alias dces='docker-compose exec spring'
 alias d='docker'
 alias be='bundle exec'
+
+alias ef 'edit-config-fish'
+alias notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
+ 
 
 alias amech='docker run -e TERM_PROGRAM --rm otiai10/amesh'
 alias lzd='lazydocker'
