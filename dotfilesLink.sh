@@ -9,4 +9,4 @@ ln -sf ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -sf ~/dotfiles/.pryrc ~/.pryrc
 ln -sf ~/dotfiles/.gitignore ~/.gitignore
 ln -sf ~/dotfiles/.tmux.conf ~/.tmux.conf
-
+ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
