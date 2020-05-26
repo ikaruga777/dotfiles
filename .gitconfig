@@ -1,0 +1,12 @@
+[user]
+  name = ikaruga
+  email = ikaruga777@gmail.com
+  
+[include]
+  path = ~/.config/git/.gitconfig.local
+
+[ghq]
+  root =~/src
+
+[credential]
+  helper = cache
