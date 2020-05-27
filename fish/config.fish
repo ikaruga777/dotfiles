@@ -21,7 +21,7 @@ function edit-config-fish
 end
 
 function reload-config
-   source ~/.config/fish/config.fish
+  source ~/.config/fish/config.fish
 end
 
 function f
@@ -32,23 +32,23 @@ function vf
   f | fzf | xargs -o vim
 end
 
-alias g='git'
-alias gc='git commit'
-alias gco='git checkout'
-alias ga='git add .'
-alias gb='git branch'
-alias r='rails'
-alias rcs='rails console --sandbox'
-alias l='lsd -a'
-alias dc='docker-compose'
-alias dces='docker-compose exec spring'
-alias d='docker'
-alias be='bundle exec'
+abbr -a g 'git'
+abbr -a gc 'git commit'
+abbr -a gp 'git pull'
+abbr -a gco 'git checkout'
+abbr -a ga 'git add .'
+abbr -a gb 'git branch'
+abbr -a r 'rails'
+abbr -a rcs 'rails console --sandbox'
+abbr -a l 'lsd -a'
+abbr -a dc 'docker-compose'
+abbr -a dces 'docker-compose exec spring'
+abbr -a d 'docker'
+abbr -a be 'bundle exec'
+abbr -a lzd 'lazydocker'
 
-alias ef 'edit-config-fish'
-alias notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
- 
+abbr -a ef 'edit-config-fish'
+abbr -a notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
 
-alias amech='docker run -e TERM_PROGRAM --rm otiai10/amesh'
-alias lzd='lazydocker'
+abbr -a amesh 'docker run -e TERM_PROGRAM --rm otiai10/amesh'
 
