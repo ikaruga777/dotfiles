@@ -10,3 +10,6 @@
 
 [credential]
   helper = cache
+
+[hub]
+  protocol = ssh
