@@ -3,7 +3,7 @@ function fish_prompt
         -cwd-max-depth 3 -cwd-max-dir-size -1 \
         -git-assume-unchanged-size 3000 \
         -hostname-only-if-ssh \
-        -modules time,host,nix-shell,venv,ssh,user,cwd,perms,docker,git,jobs,exit,vgo \
+        -modules time,host,nix-shell,venv,kube,aws,ssh,cwd,perms,docker,git,jobs,load,exit,vgo \
         -newline \
         -numeric-exit-codes
 end
