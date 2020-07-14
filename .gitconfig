@@ -3,10 +3,13 @@
   email = ikaruga777@gmail.com
   
 [include]
-  path = ~/.config/git/.gitconfig.local
+  path = ~/.config/git/local.gitconfig
 
 [ghq]
   root =~/src
 
 [credential]
   helper = cache
+
+[hub]
+  protocol = ssh
