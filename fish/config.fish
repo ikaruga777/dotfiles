@@ -34,7 +34,7 @@ end
 
 abbr -a g 'git'
 abbr -a gc 'git commit'
-abbr -a gp 'git pull'
+abbr -a gp 'git push'
 abbr -a gco 'git checkout'
 abbr -a gs 'git switch'
 abbr -a gr 'git restore'
