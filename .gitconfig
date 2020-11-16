@@ -13,3 +13,5 @@
 
 [hub]
   protocol = ssh
+[pull]
+	rebase = false
