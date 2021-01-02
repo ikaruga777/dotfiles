@@ -29,7 +29,7 @@ function f
 end
 
 function vf
-  f | fzf | xargs -o vim
+  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
 end
 
 abbr -a g 'git'
