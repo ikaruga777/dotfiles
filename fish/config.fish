@@ -47,6 +47,7 @@ abbr -a l 'lsd -a'
 abbr -a dc 'docker-compose'
 abbr -a dces 'docker-compose exec spring'
 abbr -a d 'docker'
+abbr -a kc 'kubectl'
 abbr -a be 'bundle exec'
 abbr -a lzd 'lazydocker'
 

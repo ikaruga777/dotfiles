@@ -79,6 +79,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim'
 Plug 'dense-analysis/ale'
 
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 call plug#end()
 """"""""""""""""""""""""""""""
 
