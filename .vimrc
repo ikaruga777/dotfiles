@@ -76,13 +76,12 @@ Plug 'gkeep/iceberg-dark'
 " Rails
 Plug 'tpope/vim-rails'
 Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 Plug 'dense-analysis/ale'
 
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 
 call plug#end()
 """"""""""""""""""""""""""""""
