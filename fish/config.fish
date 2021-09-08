@@ -32,6 +32,14 @@ function vf
   f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
 end
 
+function hxf
+  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o hx
+end
+
+function dwhois
+   dig $argv +short | xargs whois
+end
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
 abbr -a gp 'git push'
