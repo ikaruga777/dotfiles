@@ -32,6 +32,14 @@ function vf
   f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
 end
 
+function hxf
+  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o hx
+end
+
+function dwhois
+   dig $argv +short | xargs whois
+end
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
 abbr -a gp 'git push'
@@ -44,8 +52,8 @@ abbr -a gp 'git push'
 abbr -a r 'rails'
 abbr -a rcs 'rails console --sandbox'
 abbr -a l 'lsd -a'
-abbr -a dc 'docker-compose'
-abbr -a dces 'docker-compose exec spring'
+abbr -a dc 'docker compose'
+abbr -a dces 'docker compose exec spring'
 abbr -a d 'docker'
 abbr -a kc 'kubectl'
 abbr -a be 'bundle exec'

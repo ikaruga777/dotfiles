@@ -1,6 +1,9 @@
 set -xg LANG ja_JP.UTF-8
 set -xg LC_ALL ja_JP.UTF-8
 
+source ~/.asdf/asdf.fish
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+
 set -x PATH /usr/local/bin $PATH
 set -x PATH $HOME/.pyenv/bin $PATH
 set -x PATH $HOME/flutter/bin $PATH

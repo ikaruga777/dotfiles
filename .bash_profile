@@ -8,3 +8,4 @@ FDK_EXE="/Users/ikaruga/bin/FDK/Tools/osx"
 PATH=${PATH}:"/Users/ikaruga/bin/FDK/Tools/osx"
 export PATH
 export FDK_EXE
+source "$HOME/.cargo/env"
