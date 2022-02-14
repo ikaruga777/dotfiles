@@ -40,6 +40,12 @@ function dwhois
    dig $argv +short | xargs whois
 end
 
+function copy-command
+  echo $argv | pbcopy
+  $argv
+end
+abbr -a cc 'copy-command'
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
 abbr -a gp 'git push'
