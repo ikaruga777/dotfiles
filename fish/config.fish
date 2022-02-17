@@ -46,6 +46,11 @@ function copy-command
 end
 abbr -a cc 'copy-command'
 
+function copy-prev-command
+  history | sed -n 1p | pbcopy
+end
+abbr -a ccp 'copy-prev-command'
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
 abbr -a gp 'git push'
