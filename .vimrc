@@ -50,6 +50,8 @@ syntax on
 " バックスペースが効かなくなるやつの対策
 set backspace=indent,eol,start
 
+" 自動エンコード
+:set fileencodings=utf-8,euc-jp,iso-2022-jp,sjis
 
 filetype plugin indent on
 

@@ -11,9 +11,9 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
+background_opacity: 0.6
 
 window:
-  opacity: 0.9
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -155,35 +155,52 @@ debug:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-colors:
+schemes:
+  iceberg: &iceberg
+    # Default colors
+    primary:
+      background: '#161821'
+      foreground: '#d2d4de'
+
+    # Normal colors
+    normal:
+      black:   '#161821'
+      red:     '#e27878'
+      green:   '#b4be82'
+      yellow:  '#e2a478'
+      blue:    '#84a0c6'
+      magenta: '#a093c7'
+      cyan:    '#89b8c2'
+      white:   '#c6c8d1'
+
+    # Bright colors
+    bright:
+      black:   '#6b7089'
+      red:     '#e98989'
+      green:   '#c0ca8e'
+      yellow:  '#e9b189'
+      blue:    '#91acd1'
+      magenta: '#ada0d3'
+      cyan:    '#95c4ce'
+      white:   '#d2d4de'
+
+      indexed_colors: []
+  japanesque: &japanesque
+    normal:
+      black:       '#3c2f41'
+      white:       '#F7F1D5'
+      dark_gray:   '#828282'
+      gray:        '#91989F'
+      red:         '#D05A6E'
+      magenta:     '#F596AA'
+      green:       '#86C166'
+      dark_green:  '#6C6A2D'
+      purple:      '#8B81C3'
+      yellow:      '#EFBB24'
+
+
+colors: *japanesque
   # Colors (Iceberg)
-
-  # Default colors
-  primary:
-    background: '#161821'
-    foreground: '#d2d4de'
-
-  # Normal colors
-  normal:
-    black:   '#161821'
-    red:     '#e27878'
-    green:   '#b4be82'
-    yellow:  '#e2a478'
-    blue:    '#84a0c6'
-    magenta: '#a093c7'
-    cyan:    '#89b8c2'
-    white:   '#c6c8d1'
-
-  # Bright colors
-  bright:
-    black:   '#6b7089'
-    red:     '#e98989'
-    green:   '#c0ca8e'
-    yellow:  '#e9b189'
-    blue:    '#91acd1'
-    magenta: '#ada0d3'
-    cyan:    '#95c4ce'
-    white:   '#d2d4de'
 
   # Indexed Colors
   #
@@ -193,7 +210,6 @@ colors:
   # Example:
   #   `- { index: 16, color: '0xff00ff' }`
   #
-  indexed_colors: []
 
 # Mouse bindings
 #

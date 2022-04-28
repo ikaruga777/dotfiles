@@ -20,7 +20,7 @@ return {
   font = wezterm.font("Cica"),
   font_size = 16,
   -- color_scheme = "iceberg-dark",
-  color_scheme = "Jpanesque",
+  color_scheme = "Japanesque",
   -- color_scheme = "JetBrains Darcula",
  
   colors = { compose_cursor = "orange"  },
