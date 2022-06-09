@@ -5,7 +5,8 @@ function fish_prompt
         -hostname-only-if-ssh \
         -modules time,host,nix-shell,venv,kube,aws,ssh,cwd,perms,docker,git,jobs,load,exit,vgo \
         -newline \
-        -numeric-exit-codes
+        -numeric-exit-codes \
+        -theme solarized-dark16
 end
 
 function gconfig-ikaruga
