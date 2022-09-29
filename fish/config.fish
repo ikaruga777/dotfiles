@@ -30,7 +30,7 @@ function f
 end
 
 function vf
-  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
+  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o nvim
 end
 
 function hxf
@@ -61,10 +61,11 @@ abbr -a gr 'git restore'
 abbr -a ga 'git add .'
 abbr -a gb 'git branch'
 abbr -a gp 'git push'
-abbr -a r 'rails'
-abbr -a rcs 'rails console --sandbox'
+abbr -a r 'bin/rails'
+abbr -a rcs 'bin/rails console --sandbox'
 abbr -a l 'lsd -a'
 abbr -a dc 'docker compose'
+abbr -a de 'docker compose exec'
 abbr -a dces 'docker compose exec spring'
 abbr -a d 'docker'
 abbr -a kc 'kubectl'
@@ -81,3 +82,10 @@ end
 if test -d (brew --prefix)"/share/fish/vendor_completions.d"
     set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/vendor_completions.d
 end
+
+function ide
+  tmux split-window -v -p 30
+  tmux split-window -h -p 66
+  tmux split-window -h -p 50
+end
+zoxide init fish | source
