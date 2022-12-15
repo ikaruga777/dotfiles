@@ -185,19 +185,28 @@ schemes:
       white:   '#d2d4de'
 
       indexed_colors: []
+
   japanesque: &japanesque
     normal:
-      black:       '#3c2f41'
-      white:       '#F7F1D5'
-      dark_gray:   '#828282'
-      gray:        '#91989F'
-      red:         '#D05A6E'
-      magenta:     '#F596AA'
-      green:       '#86C166'
-      dark_green:  '#6C6A2D'
-      purple:      '#8B81C3'
-      yellow:      '#EFBB24'
-
+      background: "#0C0C0C"
+      foreground: "#f9faf6"
+      black: "#0C0C0C"
+      blue: "#4c99d3"
+      green: "#7bb75b"
+      cyan: "#389aac"
+      red: "#ce3e60"
+      yellow: "#e8b32a"
+      purple: "#a57fc4"
+      white: "#f9faf6"
+    bright:
+      Black: "#585a58"
+      Blue: "#135879"
+      Green: "#767e2b"
+      Cyan: "#76bbca"
+      tRed: "#d18ea6"
+      Yellow: "#77592e"
+      Purple: "#5f4190"
+      White: "#b1b5ae"
 
 colors: *japanesque
   # Colors (Iceberg)
