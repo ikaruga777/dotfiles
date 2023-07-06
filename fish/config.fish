@@ -60,7 +60,6 @@ abbr -a gs 'git switch'
 abbr -a gr 'git restore'
 abbr -a ga 'git add .'
 abbr -a gb 'git branch'
-abbr -a gp 'git push'
 abbr -a r 'bin/rails'
 abbr -a rcs 'bin/rails console --sandbox'
 abbr -a l 'lsd -a'
@@ -71,6 +70,7 @@ abbr -a d 'docker'
 abbr -a kc 'kubectl'
 abbr -a be 'bundle exec'
 abbr -a lzd 'lazydocker'
+abbr -a asdf 'rtx'
 
 abbr -a ef 'edit-config-fish'
 abbr -a notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
@@ -88,4 +88,3 @@ function ide
   tmux split-window -h -p 66
   tmux split-window -h -p 50
 end
-zoxide init fish | source
