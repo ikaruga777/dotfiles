@@ -1,7 +1,6 @@
 set -xg LANG ja_JP.UTF-8
 set -xg LC_ALL ja_JP.UTF-8
 
-source ~/.asdf/asdf.fish
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 set -x PATH /usr/local/bin $PATH
@@ -11,9 +10,7 @@ set -x PATH $HOME/.cargo/bin $PATH
 
 set -x GOPATH $HOME/go
 set -x PATH $GOPATH/bin $PATH
+rtx activate fish | source
 
-set -x PATH $HOME/.nodenv/bin $PATH
 set HISTSIZE 1000000
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '~/google-cloud-sdk/path.fish.inc' ]; . '~/google-cloud-sdk/path.fish.inc'; end
