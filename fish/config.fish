@@ -1,9 +1,12 @@
 function fish_prompt
+    set duration (math -s6 "$CMD_DURATION / 1000")
     $GOPATH/bin/powerline-go -error $status -shell bare \
         -cwd-max-depth 3 -cwd-max-dir-size -1 \
         -git-assume-unchanged-size 3000 \
         -hostname-only-if-ssh \
-        -modules time,host,nix-shell,venv,kube,aws,ssh,cwd,perms,docker,git,jobs,load,exit,vgo \
+        -duration $duration \
+        -duration-min 1 \
+        -modules time,duration,host,nix-shell,venv,kube,aws,ssh,cwd,perms,docker,git,jobs,exit \
         -newline \
         -numeric-exit-codes \
         -theme solarized-dark16
