@@ -13,7 +13,7 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.7
+  opacity: 0.9
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -62,7 +62,6 @@ scrolling:
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  multiplier: 3
 
   # Faux Scrolling
   #
