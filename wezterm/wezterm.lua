@@ -15,7 +15,7 @@ wezterm.on("update-right-status", function(window, pane)
 end)
 
 return {
-  default_prog = {"/usr/local/bin/fish", "-l"},
+  default_prog = {"/opt/homebrew/bin/fish", "-l"},
   use_ime = true,
   font = wezterm.font("Cica"),
   font_size = 16,
