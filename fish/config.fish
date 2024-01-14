@@ -73,7 +73,7 @@ abbr -a d 'docker'
 abbr -a kc 'kubectl'
 abbr -a be 'bundle exec'
 abbr -a lzd 'lazydocker'
-abbr -a asdf 'rtx'
+abbr -a asdf 'mise'
 
 abbr -a ef 'edit-config-fish'
 abbr -a notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'

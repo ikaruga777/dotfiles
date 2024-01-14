@@ -51,9 +51,6 @@ alias rcs='rails console --sandbox'
 #ZSH_THEME ="powerline"
 #gitのブランチ補完
 fpath=(/usr/local/share/zsh-completions $fpath)
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:$PYTHONPATH"
-export PATH=$PATH:~/settings/powerline/scripts
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-export PATH=/usr/local/bin:$PATH
-export PATH="$PATH:$HOME/.rbenv/bin"
-eval "$(rbenv init - zsh)"
+
+eval "$(starship init zsh)"
+
