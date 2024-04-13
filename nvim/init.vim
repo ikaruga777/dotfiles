@@ -16,7 +16,7 @@ Plug 'tpope/vim-endwise'
 Plug 'scrooloose/nerdtree'
 Plug 'lambdalisue/fern.vim'
 Plug 'dag/vim-fish'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'Shougo/unite.vim'
 Plug 'tpope/vim-rails'

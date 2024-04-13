@@ -54,3 +54,5 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 eval "$(starship init zsh)"
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
