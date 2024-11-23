@@ -88,6 +88,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 
 call plug#end()
 """"""""""""""""""""""""""""""
+" ale
+let g:ale_virtualtext_cursor = 'current'
 
 "ファイルツリー
 nnoremap <silent><C-e> :NERDTreeToggle<CR>

@@ -26,6 +26,9 @@ Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'  }
 call plug#end()
 
+" ale
+let g:ale_virtualtext_cursor = 'disabled'
+
 "ファイルツリー
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
