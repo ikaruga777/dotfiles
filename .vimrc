@@ -53,6 +53,7 @@ set backspace=indent,eol,start
 " 自動エンコード
 :set fileencodings=utf-8,euc-jp,iso-2022-jp,sjis
 
+set rtp+=/opt/homebrew/opt/fzf
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""
