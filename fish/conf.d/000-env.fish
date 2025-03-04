@@ -5,6 +5,7 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -x PATH /opt/homebrew/bin $PATH
 
 set -x PATH /usr/local/bin $PATH
+set -x PATH $HOME/.local/bin $PATH
 set -x PATH $HOME/flutter/bin $PATH
 set -x PATH $HOME/.cargo/bin $PATH
 

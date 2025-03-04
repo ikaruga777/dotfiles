@@ -6,7 +6,6 @@ ln -sf ~/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/dotfiles/.tigrc ~/.tigrc
 ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 ln -fs ~/dotfiles/fish/conf.d/000-env.fish ~/.config/fish/conf.d/000-env.fish
-ln -sf ~/dotfiles/alacritty.yml ~/.config/alacritty/alacritty.yml
 ln -sf ~/dotfiles/alacritty.toml ~/.config/alacritty/alacritty.toml
 ln -sf ~/dotfiles/.pryrc ~/.pryrc
 ln -sf ~/dotfiles/.gitignore ~/.gitignore

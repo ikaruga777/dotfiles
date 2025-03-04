@@ -28,16 +28,12 @@ function reload-config
   source ~/.config/fish/config.fish
 end
 
-function f
-  git ls-tree -r --name-only HEAD
-end
-
 function vf
-  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o nvim
+  git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
 end
 
 function hxf
-  f | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o hx
+  git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o hx
 end
 
 function dwhois
@@ -55,9 +51,16 @@ function copy-prev-command
 end
 abbr -a ccp 'copy-prev-command'
 
+function fish_should_add_to_history
+ for cmd in set
+   string match -qr "^$cmd" -- $argv; and return 1
+   end
+  return 0
+end
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
-abbr -a gp 'git push'
+abbr -a gp 'git pull'
 abbr -a gco 'git checkout'
 abbr -a gs 'git switch'
 abbr -a gr 'git restore'
@@ -69,15 +72,17 @@ abbr -a l 'lsd -a'
 abbr -a dc 'docker compose'
 abbr -a de 'docker compose exec'
 abbr -a dces 'docker compose exec spring'
+abbr -a de 'docker compose exec'
 abbr -a d 'docker'
 abbr -a kc 'kubectl'
 abbr -a be 'bundle exec'
 abbr -a lzd 'lazydocker'
 abbr -a asdf 'mise'
-
+abbr -a c 'colima'
 abbr -a ef 'edit-config-fish'
 abbr -a notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
 
+abbr -a rtx 'mise'
 if test -d (brew --prefix)"/share/fish/completions"
     set -gx fish_complete_path $fish_complete_path (brew --prefix)/share/fish/completions
 end
