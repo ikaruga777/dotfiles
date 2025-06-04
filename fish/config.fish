@@ -36,6 +36,10 @@ function hxf
   git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o hx
 end
 
+function checkout-with-preview
+   git branch --list | cut -c 3- | fzf --tmux --preview "git log -20 --oneline --graph --color=always {}" | xargs git checkout
+end
+
 function dwhois
    dig $argv +short | xargs whois
 end
@@ -66,6 +70,7 @@ abbr -a gs 'git switch'
 abbr -a gr 'git restore'
 abbr -a ga 'git add .'
 abbr -a gb 'git branch'
+abbr -a co 'checkout-with-preview'
 abbr -a r 'bin/rails'
 abbr -a rcs 'bin/rails console --sandbox'
 abbr -a l 'lsd -a'
