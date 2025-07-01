@@ -67,6 +67,11 @@ function fish_should_add_to_history
   return 0
 end
 
+function delete-zllij-sessions
+  zellij ls | sed 's/\x1b\[[0-9;]*m//g' | awk '/EXITED/ {print $1}' | xargs -I {} zellij d {}
+end
+abbr -a zpoi 'delete-zllij-sessions'
+
 abbr -a g 'git'
 abbr -a gc 'git commit'
 abbr -a gp 'git pull'
