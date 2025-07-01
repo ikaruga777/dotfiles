@@ -248,11 +248,130 @@ keybinds clear-defaults=true {
         bind "z" { ToggleFocusFullscreen; SwitchToMode "normal"; }
     }
 }
+themes {
+    japanesque {
+        text_unselected {
+            base 247 241 213
+            background 60 47 65
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        text_selected {
+            base 247 241 213
+            background 38 28 41
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        ribbon_selected {
+            base 60 47 65
+            background 134 193 102
+            emphasis_0 208 90 110
+            emphasis_1 208 135 112
+            emphasis_2 245 150 170
+            emphasis_3 129 161 193
+        }
+        ribbon_unselected {
+            base 60 47 65
+            background 247 241 213
+            emphasis_0 208 90 110
+            emphasis_1 247 241 213
+            emphasis_2 129 161 193
+            emphasis_3 245 150 170
+        }
+        table_title {
+            base 134 193 102
+            background 0
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        table_cell_selected {
+            base 247 241 213
+            background 38 28 41
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        table_cell_unselected {
+            base 247 241 213
+            background 60 47 65
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        list_selected {
+            base 247 241 213
+            background 38 28 41
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        list_unselected {
+            base 247 241 213
+            background 60 47 65
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 134 193 102
+            emphasis_3 245 150 170
+        }
+        frame_selected {
+            base 134 193 102
+            background 0
+            emphasis_0 208 135 112
+            emphasis_1 136 192 208
+            emphasis_2 245 150 170
+            emphasis_3 0
+        }
+        frame_highlight {
+            base 208 135 112
+            background 0
+            emphasis_0 208 135 112
+            emphasis_1 208 135 112
+            emphasis_2 208 135 112
+            emphasis_3 208 135 112
+        }
+        exit_code_success {
+            base 134 193 102
+            background 0
+            emphasis_0 136 192 208
+            emphasis_1 60 47 65
+            emphasis_2 245 150 170
+            emphasis_3 129 161 193
+        }
+        exit_code_error {
+            base 208 90 110
+            background 0
+            emphasis_0 239 187 36
+            emphasis_1 0
+            emphasis_2 0
+            emphasis_3 0
+        }
+        multiplayer_user_colors {
+            player_1 245 150 170
+            player_2 129 161 193
+            player_3 0
+            player_4 239 187 36
+            player_5 136 192 208
+            player_6 0
+            player_7 208 90 110
+            player_8 0
+            player_9 0
+            player_10 0
+        }
+    }
+}
 
 // Plugin aliases - can be used to change the implementation of Zellij
 // changing these requires a restart to take effect
 plugins {
-
     about location="zellij:about"
     compact-bar location="zellij:compact-bar"
     configuration location="zellij:configuration"
@@ -291,23 +410,6 @@ simplified_ui false
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
-//  theme "kanagawa"
-
-themes {
-    japanesque {
-        fg "#F7F1D5"
-        bg "#261C29"
-        black "#3C2F41"
-        red "#D05A6E"
-        green "#86C166"
-        yellow "#EFBB24"
-        blue "#81A1C1"
-        magenta "#F596AA"
-        cyan "#88C0D0"
-        white "#F7F1D5"
-        orange "#D08770"
-    }
-}
 theme "japanesque"
  
 // Choose the base input mode of zellij.
