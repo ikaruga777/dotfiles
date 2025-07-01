@@ -1,4 +1,5 @@
-theme = Japanesque
+#theme = Japanesque
+background = "#3C2F41"
 font-family = "Cica"
 font-size = 22
 
