@@ -6,7 +6,7 @@ function fish_prompt
         -hostname-only-if-ssh \
         -duration $duration \
         -duration-min 1 \
-        -modules time,duration,host,nix-shell,venv,kube,aws,ssh,cwd,perms,docker,git,jobs,exit \
+        -modules time,duration,host,nix-shell,venv,aws,ssh,cwd,perms,docker,git,jobs,exit \
         -newline \
         -numeric-exit-codes \
         -theme solarized-dark16
@@ -28,8 +28,13 @@ function reload-config
   source ~/.config/fish/config.fish
 end
 
+
+function vfn
+  git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o nvim
+end
+
 function vf
-  git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o vim
+  git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' --bind 'focus:bg-transform-header(file {};wc {})' | xargs -o vim
 end
 
 function hxf
@@ -37,7 +42,7 @@ function hxf
 end
 
 function checkout-with-preview
-   git branch --list | cut -c 3- | fzf --tmux --preview "git log -20 --oneline --graph --color=always {}" | xargs git checkout
+   git branch --list | cut -c 3- | sort | fzf --tmux --preview "git log -20 --oneline --graph --color=always {}" | xargs git checkout
 end
 
 function dwhois

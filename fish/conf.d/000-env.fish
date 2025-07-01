@@ -15,3 +15,4 @@ mise activate fish | source
 
 set HISTSIZE 1000000
 
+set -x BAT_PAGER "less -RFX"

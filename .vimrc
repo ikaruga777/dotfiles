@@ -61,6 +61,8 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""
 call plug#begin('~/.vim/plugged')
 
+Plug 'aereal/vim-colors-japanesque'
+
 " ファイルオープンを便利に
 Plug 'Shougo/unite.vim'
 " Unite.vimで最近使ったファイルを表示できるようにする
