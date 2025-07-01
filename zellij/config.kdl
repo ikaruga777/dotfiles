@@ -274,20 +274,20 @@ plugins {
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
 }
+ui {
+    pane_frames {
+        rounded_corners true
+        hide_session_name true
+    }
+}
  
 // Use a simplified UI without special fonts (arrow glyphs)
 // Options:
 //   - true
 //   - false (Default)
 // 
- simplified_ui false
-
-ui {
-    pane_frames {
-        rounded_corners true
-    }
-}
-
+simplified_ui false
+ 
 // Choose the theme that is specified in the themes section.
 // Default: default
 // 
@@ -309,6 +309,7 @@ themes {
     }
 }
 theme "japanesque"
+ 
 // Choose the base input mode of zellij.
 // Default: normal
 // 
@@ -317,7 +318,7 @@ default_mode "normal"
 // Choose the path to the default shell that zellij will use for opening new panes
 // Default: $SHELL
 // 
-  default_shell "fish"
+default_shell "fish"
  
 // Choose the path to override cwd that zellij will use for opening new panes
 // 
@@ -342,7 +343,7 @@ default_mode "normal"
 //   - true (default, enabled)
 //   - false
 // 
-// pane_frames false
+pane_frames false
  
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -472,7 +473,7 @@ default_mode "normal"
 // Whether to show tips on startup
 // Default: true
 // 
-// show_startup_tips false
+show_startup_tips false
  
 // Whether to show release notes on first version run
 // Default: true
