@@ -26,8 +26,8 @@ end
 
 function reload-config
   source ~/.config/fish/config.fish
+  source ~/.config/fish/conf.d/*.fish
 end
-
 
 function vfn
   git ls-tree -r --name-only HEAD | fzf --preview 'bat --color=always --style=header,grid --line-range :100 {}' | xargs -o nvim
