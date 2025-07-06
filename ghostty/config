@@ -5,5 +5,7 @@ font-size = 22
 
 macos-option-as-alt = left
 
+background-opacity = 0.9
 keybind = alt+left=unbind
 keybind = alt+right=unbind
+macos-titlebar-style = tabs
