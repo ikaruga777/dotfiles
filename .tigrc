@@ -7,9 +7,13 @@ set line-graphics = utf-8
 set pager-view = line-number:yes,interval=5 text
 set main-view = id date author:email-user commit-title:graph=yes,refs=yes
 set main-options = -n 1000
-bind generic P @sh -c 'hub browse -- commit/%(commit)'
+
+# ブラウザで開きたいよね
+bind generic n @sh -c 'gh browse  %(file) --commit=%(commit)'
+# rebase したいときあるよね
 bind main r !git rebase -i %(commit)
 bind diff r !git rebase -i %(commit)
 
 bind generic J :toggle split-view-height -10%
 bind generic K :toggle split-view-height +10%
+
