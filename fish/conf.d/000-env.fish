@@ -15,4 +15,7 @@ mise activate fish | source
 
 set HISTSIZE 1000000
 
+# bat から戻った時に表示されている内容を残したい
 set -x BAT_PAGER "less -RFX"
+# fish-ghq で orgs/repo だけを検索対象にしたい
+set -x GHQ_SELECTOR_OPTS "--delimiter=/" "--nth=-2,-1"

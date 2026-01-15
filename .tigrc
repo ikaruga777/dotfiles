@@ -14,6 +14,8 @@ bind generic n @sh -c 'gh browse  %(file) --commit=%(commit)'
 bind main r !git rebase -i %(commit)
 bind diff r !git rebase -i %(commit)
 
+ bind status $ !rm %(file)
+
 bind generic J :toggle split-view-height -10%
 bind generic K :toggle split-view-height +10%
 
