@@ -53,17 +53,17 @@ function copy-command
   echo $argv | pbcopy
   $argv
 end
-abbr -a cc 'copy-command'
+abbr -a cccc 'copy-command'
 
 function copy-prev-command
   history | sed -n 1p | pbcopy
 end
-abbr -a ccp 'copy-prev-command'
+abbr -a cccp 'copy-prev-command'
 
 function fish_should_add_to_history
  for cmd in set
-   string match -qr "^$cmd" -- $argv; and return 1
-   end
+   string match -qr "^$cmd" -- $argv; and return 0
+  end
   return 0
 end
 
@@ -96,6 +96,7 @@ abbr -a asdf 'mise'
 abbr -a c 'colima'
 abbr -a ef 'edit-config-fish'
 abbr -a notes 'rg "TODO|HACK|FIXME|OPTIMIZE"'
+abbr -a gsm 'git switch (gh repo view --json "defaultBranchRef" | jq -r .defaultBranchRef.name)'
 
 abbr -a rtx 'mise'
 if test -d (brew --prefix)"/share/fish/completions"
